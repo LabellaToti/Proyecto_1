@@ -3,7 +3,10 @@ body{
     padding: 0px;
     box-sizing: border-box;
     background-image: url(../assets/imagenes/design1_image2.jpg);
+    background-repeat: no-repeat;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
 
 }
 
@@ -35,7 +38,7 @@ header nav {
     align-self: flex-end;
 }
 
-header nav a {
+header nav a, .buton{
     box-sizing: border-box;
     height: 40px;
     width: 120px;
@@ -44,7 +47,7 @@ header nav a {
     border: 3px solid #f2f009;
     text-align: center;
     border-radius: 3rem;
-    padding-top: 7px;
+    padding-top: 5px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bolder;
@@ -61,7 +64,7 @@ header nav a {
 
 /** Estilo del boton cuando paso el mouse**/
 
-header nav a:hover{
+header nav a:hover, .buton:hover {
     cursor: pointer;
     transform: scale(1.1,1.2);
     transform: translate(0, -10px);
@@ -169,4 +172,90 @@ h5{
 
 .vacio{
     list-style: circle;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(240, 248, 255,0.8);
+    height: fit-content;
+
+}
+
+.formulario h6 {
+    font-size: 2em;
+    font-weight: bolder;
+
+}
+form{
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem ;
+
+}
+fieldset{
+    width: 800px;
+    border: none;
+    padding: 5px;
+    display:flex;
+    flex-direction: column;
+    
+}
+ .eleccion{
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ .multiple{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+ }
+ .multiple label{
+    width: 25%;
+
+ }
+
+ .multiple input{
+    width: fit-content;
+ }
+
+legend{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: yellowgreen;
+    margin: 10px;
+}
+
+input{
+    width: 100%;
+}
+
+.maps{
+    height: 100px;
+    width: 200px;
+}
+.gender{
+    padding-top: 5px;
+    font-size: 1em;
+color: #0d0801;}
+
+
+label{
+    width: fit-content;
+}
+
+.boton{
+    background-color: rgba(255, 248, 255,0.8);
+    border: #0d0801 0.5px solid;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content:flex-end;
+}
+
+#boton {
+    width: 100px;
+    margin: 0;
 }
